@@ -1,7 +1,6 @@
 from mongoengine import Document
 from mongoengine.fields import StringField, ReferenceField, ListField, DateField
 
-
 class Author(Document):
     meta = {'collection': 'authors'}
     fullname = StringField()
