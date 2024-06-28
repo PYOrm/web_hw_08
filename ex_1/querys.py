@@ -10,8 +10,9 @@ cache = RedisLRU(client)
 
 
 def print_quotes(quotes):
-    if type(quotes) == 'str':
+    if type(quotes) is str:
         print(quotes)
+        return
     for q in quotes:
         print(f"Author:  {q.author.fullname}")
         print(f"Quote:  {q.quote}")
